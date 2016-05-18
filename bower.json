@@ -1,0 +1,20 @@
+{
+  "name": "mail",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Sergey Dmitriev <serge.dmitriev@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/antirek/mail",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
