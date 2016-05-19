@@ -3,14 +3,76 @@ extends layout
 block content
   .container
     .row
-      .col-md-3.left
-        ul.list-group
-          li.list-group-item 1234
-          li.list-group-item 1234
-          li.list-group-item 1234
-          li.list-group-item 1234
-          li.list-group-item 1234
-          li.list-group-item 1234
+      .col-md-3
+
+        .panel.panel-default
+          .panel-heading Config menu 
+          ul#stacked-menu.nav.nav-pills.nav-stacked.left.left3
+            li
+              a(data-toggle='collapse', data-parent='#stacked-menu', href='#p1')
+                | Process One
+                span.caret.arrow
+              |           
+              ul#p1.nav.nav-pills.nav-stacked.collapse.in
+                li
+                  a(href='google.com') View One
+                |             
+                li
+                  a(href='gmail.com') View Two
+                |          
+                li
+                  a(href='#') Trash
+                li.nav-divider
+                li
+                  a(href='google.com') View One
+                |             
+                li
+                  a(href='gmail.com') View Two
+                |          
+                li
+                  a(href='#') Trash
+                li.nav-divider
+                li
+                  a(href='google.com') View One
+                |             
+                li
+                  a(href='gmail.com') View Two
+                |          
+                li
+                  a(href='#') Trash
+                li.nav-divider
+            |         
+            li
+              a(data-toggle='collapse', data-parent='#stacked-menu', href='#p2')
+                | Process Two
+                span.caret.arrow
+              |           
+              |           
+              ul#p2.nav.nav-pills.nav-stacked.collapse
+                li
+                  a(href='#') View One
+                |             
+                li
+                  a(href='#') View Two
+                |             
+                li
+                  a(href='#') View Three
+                |             
+                li.nav-divider
+                |             
+                li
+                  a(href='#') Trash
+            |         
+            li
+              a(href='#')
+                | Process Three
+                span.caret.arrow
+            |         
+            li
+              a(href='#')
+                | Process Four
+                span.caret.arrow
+
 
   
       .col-md-3

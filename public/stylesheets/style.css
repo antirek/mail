@@ -16,6 +16,10 @@ a {
     overflow: auto;
 }
 
+.left {
+	overflow: auto;
+}
+
 .left::-webkit-scrollbar {
 	width: 2px;
 }
@@ -41,3 +45,8 @@ a {
 .left::-webkit-scrollbar-thumb:hover {
 	background:black;
 }			
+
+
+ul.nav-stacked ul.nav-stacked > li > a {
+  padding-left: 30px;
+}
