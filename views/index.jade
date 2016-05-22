@@ -1,88 +1,18 @@
 extends layout
 
 block content
+  br
   .container
     .row
-      .col-md-3
-
-        .panel.panel-default
-          .panel-heading Config menu 
-          ul#stacked-menu.nav.nav-pills.nav-stacked.left.left3
-            li
-              a(data-toggle='collapse', data-parent='#stacked-menu', href='#p1')
-                | Process One
-                span.caret.arrow
-              |           
-              ul#p1.nav.nav-pills.nav-stacked.collapse.in
-                li
-                  a(href='google.com') View One
-                |             
-                li
-                  a(href='gmail.com') View Two
-                |          
-                li
-                  a(href='#') Trash
-                li.nav-divider
-                li
-                  a(href='google.com') View One
-                |             
-                li
-                  a(href='gmail.com') View Two
-                |          
-                li
-                  a(href='#') Trash
-                li.nav-divider
-                li
-                  a(href='google.com') View One
-                |             
-                li
-                  a(href='gmail.com') View Two
-                |          
-                li
-                  a(href='#') Trash
-                li.nav-divider
-            |         
-            li
-              a(data-toggle='collapse', data-parent='#stacked-menu', href='#p2')
-                | Process Two
-                span.caret.arrow
-              |           
-              |           
-              ul#p2.nav.nav-pills.nav-stacked.collapse
-                li
-                  a(href='#') View One
-                |             
-                li
-                  a(href='#') View Two
-                |             
-                li
-                  a(href='#') View Three
-                |             
-                li.nav-divider
-                |             
-                li
-                  a(href='#') Trash
-            |         
-            li
-              a(href='#')
-                | Process Three
-                span.caret.arrow
-            |         
-            li
-              a(href='#')
-                | Process Four
-                span.caret.arrow
-
-
-  
-      .col-md-3
+      
+      .col-md-4
         .panel.panel-default    
           .panel-heading Items 
             small.pull-right
               a.btn.btn-default.btn-xs
                 span.glyphicon.glyphicon-search(aria-hidden='true')
           .panel-body search form 
-          ul.list-group.left.left3
+          ul.list-group.left.left2
             li.list-group-item Антон XXXXXXXXXXXXXXX
                 span.badge 12
             li.list-group-item 1234
@@ -109,60 +39,64 @@ block content
             li.list-group-item 1234
             li.list-group-item 1234          
 
-      .col-md-6
-        h3 Demo 
-          small.pull-right
-            a.btn.btn-primary Save
-            | 
-            a.btn.btn-default Delete
-        div
-          ul.nav.nav-tabs(role='tablist')
+      .col-md-8
+        .panel.panel-default
 
-            li.active(role='presentation')
-              a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Home
-            |     
-            li(role='presentation')
-              a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
-            |     
-            li(role='presentation')
-              a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Messages
-            |     
-            li(role='presentation')
-              a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') Settings
+          .panel-heading Demo 
+            small.pull-right
+              a.btn.btn-primary.btn-xs Save
+              | 
+              a.btn.btn-default.btn-xs Delete
 
+          .panel-body
+            ul.nav.nav-pills(role='tablist')
 
-          .tab-content
-            #home.tab-pane.active(role='tabpanel').left2.left
-              div
-                h4 Main
-                .well
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
-                  p hello
+              li.active(role='presentation')
+                a(href='#home', aria-controls='home', role='tab', data-toggle='tab') Home
+              |     
+              li(role='presentation')
+                a(href='#profile', aria-controls='profile', role='tab', data-toggle='tab') Profile
+              |     
+              li(role='presentation')
+                a(href='#messages', aria-controls='messages', role='tab', data-toggle='tab') Messages
+              |     
+              li(role='presentation')
+                a(href='#settings', aria-controls='settings', role='tab', data-toggle='tab') Settings
 
 
+            .tab-content
+              #home.tab-pane.active(role='tabpanel').left3.left
+                div
+                  h4 Main
+                  
+                  div
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
+                    p hello
 
 
-            #profile.tab-pane(role='tabpanel') 2
-            #messages.tab-pane(role='tabpanel') 3     
-            #settings.tab-pane(role='tabpanel') 4
+
+
+              #profile.tab-pane(role='tabpanel') 2
+              #messages.tab-pane(role='tabpanel') 3     
+              #settings.tab-pane(role='tabpanel') 4
 
 script.
   $('.nav-tabs a').click(function (e) {

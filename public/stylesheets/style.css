@@ -1,20 +1,65 @@
+html, body {
+  height: 100%;
+}
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 50px 0 0 0;
 }
 
-a {
-  color: #00B7FF;
+.navmenu {
+  padding-top: 50px;
 }
 
-.left3 {
-    height: calc(100vh - 200px);
+.navbar {
+  display: block;
+  text-align: center;
+}
+.navbar-brand {
+  display: inline-block;
+  float: none;
+}
+.navbar-toggle {
+  position: absolute;
+  float: left;
+  margin-left: 15px;
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 1px) {
+  .navbar-toggle {
+    display: block !important;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 0 0 300px;
+  }
+  .navmenu {
+    padding-top: 0;
+  }
+  .navbar {
+    display: none !important; /* IE8 fix */
+  }
+}
+
+.left1 {
+	height: calc(100vh - 90px);
     overflow: auto;
 }
 
 .left2 {
-    height: calc(100vh - 250px);
+    height: calc(100vh - 140px);
     overflow: auto;
 }
+
+.left3 {
+    height: calc(100vh - 160px);
+    overflow: auto;
+}
+
 
 .left {
 	overflow: auto;
