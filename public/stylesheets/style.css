@@ -58,6 +58,7 @@ body {
 .left3 {
     height: calc(100vh - 210px);
     overflow: auto;
+    padding-right: 15px; 
 }
 
 
