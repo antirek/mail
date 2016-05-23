@@ -7,10 +7,11 @@ block content
       
       .col-md-4
         .panel.panel-default    
-          .panel-heading Items 
-            small.pull-right
-              a.btn.btn-default.btn-xs
-                span.glyphicon.glyphicon-search(aria-hidden='true')
+          .panel-heading.clearfix
+            .panel-title Items 
+              small.pull-right
+                a.btn.btn-default.btn-sm
+                  span.glyphicon.glyphicon-search(aria-hidden='true')
           .panel-body search form 
           ul.list-group.left.left2
             li.list-group-item Антон XXXXXXXXXXXXXXX
@@ -42,11 +43,16 @@ block content
       .col-md-8
         .panel.panel-default
 
-          .panel-heading Demo 
-            small.pull-right
-              a.btn.btn-primary.btn-xs Save
-              | 
-              a.btn.btn-default.btn-xs Delete
+          .panel-heading.clearfix
+            h4.panel-title.pull-left Form Card Title
+            .btn-group.pull-right
+              button.btn.btn-default
+                i.fa.fa-times
+                |         Cancel
+              button.btn.btn-primary
+                i.fa.fa-check
+                |         Save
+
 
           .panel-body
             ul.nav.nav-pills(role='tablist')
@@ -97,6 +103,9 @@ block content
               #profile.tab-pane(role='tabpanel') 2
               #messages.tab-pane(role='tabpanel') 3     
               #settings.tab-pane(role='tabpanel') 4
+
+          .panel-footer
+            small Hello
 
 script.
   $('.nav-tabs a').click(function (e) {

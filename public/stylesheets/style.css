@@ -51,12 +51,12 @@ body {
 }
 
 .left2 {
-    height: calc(100vh - 140px);
+    height: calc(100vh - 150px);
     overflow: auto;
 }
 
 .left3 {
-    height: calc(100vh - 160px);
+    height: calc(100vh - 210px);
     overflow: auto;
 }
 
@@ -90,4 +90,8 @@ body {
 
 ul.nav-stacked ul.nav-stacked > li > a {
   padding-left: 30px;
+}
+
+.panel-title {
+	margin: 7px 0;
 }
